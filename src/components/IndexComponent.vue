@@ -46,7 +46,7 @@ export default {
   },
   methods: {
     deletePost(id) {
-      let uri = `http://localhost:4000/posts/delete/${id}`;
+      let uri = `http://localhost:7034/posts/delete/${id}`;
       this.axios.delete(uri).then(response => {
         console.log("response", response);
         this.posts.splice(this.posts.indexOf(id), 1);
